@@ -36,5 +36,12 @@ def main():
     signed_txn = w3.eth.account.sign_transaction(txn, private_key=Anvil_Private_Key_0)
     print("Signed Transaction:", signed_txn)
 
+    # Sending a Transaction
+    tx_hash = w3.eth.send_raw_transaction(signed_txn.raw_transaction)
+    print("Transaction Hash:", tx_hash.hex())
+    tx_receipt = w3.eth.wait_for_transaction_receipt(tx_hash)
+    print("Transaction Receipt:", tx_receipt)   
+    print(f'Done! Contract deployed at address: {tx_receipt.contractAddress}')
+
 if __name__ == "__main__":
     main()
