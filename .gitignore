@@ -1,0 +1,16 @@
+#Python generated files
+.env
+env/
+.vscode/
+__pycache__/
+*.pyc
+.ipynb_checkpoints
+*.py[oc]
+build/
+dist/
+*.egg-info/
+
+#Virtual environment
+venv/
+.venv
+.venv/

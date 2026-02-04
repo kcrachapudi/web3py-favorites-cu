@@ -1,7 +1,11 @@
 from vyper import compile_code
 from web3 import Web3, HTTPProvider
+from dotenv import load_dotenv
+import os
 
-Anvil_Private_Key_0 = "0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80"
+load_dotenv()
+Anvil_Private_Key_0 = os.getenv("Anvil_Private_Key_0")
+RPC_URL = os.getenv("RPC_URL")
 
 def main():
     print("Let's read in the Vyper code and deploy it!")
