@@ -1,0 +1,8 @@
+{
+    "Sepolia": {
+        "rpc_url": "https://sepolia.infuria.io",
+        "chain_id": "11155111",
+        "currency_symbol": "SepoliaETH",
+        "address": "0x7575f0D5554b5349B2F8fb355AC65c74490117ac"
+    }
+}
